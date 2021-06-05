@@ -1,4 +1,4 @@
-let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;  // Instanciamos xmlhttprequest, para hacer llamados a una API desde Javascript  
+let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;  //  we instantiate xmlhttprequest, to do calls to API from Javascript  
 let API = 'https://rickandmortyapi.com/api/character/';
 
 function fetchData(url, callback) {
@@ -8,7 +8,7 @@ function fetchData(url, callback) {
         //validation
         if (xhttp.readyState === 4){
             if (xhttp.status === 200) {
-                //regresamos nuestro callback
+                //callback
                 callback(null, JSON.parse(xhttp.responseText));
             } else {
                 const error = new Error ('Error' + url);
