@@ -1,4 +1,4 @@
 # Promises-Js
 
-Code Training
+Code Training.
 Asynchronism, Promise and Callbacks
